@@ -1,6 +1,5 @@
 package com.aop.workflow_engine.model;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Map;
 
@@ -8,11 +7,17 @@ import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Data;
 
-public class workflow {
+@Entity
+@Table(name = "Workflow")
+@Data
+public class Workflow {
     
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)

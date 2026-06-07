@@ -8,6 +8,7 @@ public class WorkflowEngineApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(WorkflowEngineApplication.class, args);
+		System.out.println("Hello there!");
 	}
 
 }
